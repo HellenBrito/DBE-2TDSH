@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+
+</h:head>
+<body>
+	<h:form>
+		<p:tabMenu activeIndex="#{param.i}">
+			<p:menuitem value="Home" icon="pi pi-fw pi-home">
+			</p:menuitem>
+			<p:menuitem value="Setups" icon="pi pi-fw pi-desktop">
+			</p:menuitem>
+			<p:menuitem value="Profile" icon="pi pi-fw pi-users">
+			</p:menuitem>
+		</p:tabMenu>
+	</h:form>
+	<h1>NEW SETUP</h1>
+	<h:form>
+		<h:panelGrid columns="1">
+		
+			<div class="p-field p-grid">
+				<label for="Name" class="p-col-fixed" style="width: 100px">Name</label>
+				<div class="p-col">
+					<p:inputText id="Name" type="text" />
+				</div>
+			</div>
+			<div class="p-field p-grid">
+				<label for="Description" class="p-col-fixed" style="width: 100px">Description</label>
+				<div class="p-col">
+					<p:inputText id="Description" type="text" />
+				</div>
+				</div>
+			<div class="p-field p-grid">
+				<label for="Price" class="p-col-fixed" style="width: 100px">Price</label>
+				<div class="p-col">
+					<p:inputText id="Price" type="text" />
+				</div>
+			</div>
+			</h:panelGrid>
+			<p:commandButton type="button" value="Save" icon="pi pi-check" />
+			<p:commandButton type="button" value="Secondary" styleClass="ui-button-secondary" icon="pi pi-times" />
+		
+	</h:form>
+
+
+</body>
+</html>
